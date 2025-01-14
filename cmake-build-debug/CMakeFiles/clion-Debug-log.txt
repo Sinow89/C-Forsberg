@@ -1,0 +1,50 @@
+"D:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -G Ninja -S "G:\Min enhet\Skolarbete\System Programming\C-Forsberg" -B "G:\Min enhet\Skolarbete\System Programming\C-Forsberg\cmake-build-debug"
+-- Configuring done (0.3s)
+-- Generating done (0.2s)
+-- Build files have been written to: G:/Min enhet/Skolarbete/System Programming/C-Forsberg/cmake-build-debug
+
+Cannot get compiler information:
+	Compiler exited with error code 1: C:\zig\zig.exe -xc -g -std=gnu99 -fpch-preprocess -v -dD -E
+	info: Usage: zig [command] [options]
+	
+	Commands:
+	
+	  build            Build project from build.zig
+	  fetch            Copy a package into global cache and print its hash
+	  init             Initialize a Zig package in the current directory
+	
+	  build-exe        Create executable from source or object files
+	  build-lib        Create library from source or object files
+	  build-obj        Create object from source or object files
+	  test             Perform unit testing
+	  run              Create executable and run immediately
+	
+	  ast-check        Look for simple compile errors in any set of files
+	  fmt              Reformat Zig source into canonical form
+	  reduce           Minimize a bug report
+	  translate-c      Convert C code to Zig code
+	
+	  ar               Use Zig as a drop-in archiver
+	  cc               Use Zig as a drop-in C compiler
+	  c++              Use Zig as a drop-in C++ compiler
+	  dlltool          Use Zig as a drop-in dlltool.exe
+	  lib              Use Zig as a drop-in lib.exe
+	  ranlib           Use Zig as a drop-in ranlib
+	  objcopy          Use Zig as a drop-in objcopy
+	  rc               Use Zig as a drop-in rc.exe
+	
+	  env              Print lib path, std path, cache directory, and version
+	  help             Print this help and exit
+	  std              View standard library documentation in a browser
+	  libc             Display native libc paths file or validate one
+	  targets          List available compilation targets
+	  version          Print version number and exit
+	  zen              Print Zen of Zig and exit
+	
+	General Options:
+	
+	  -h, --help       Print command-specific usage
+	
+	error: unknown command: -xc
+	
+	

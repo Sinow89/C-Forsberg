@@ -1,0 +1,46 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang.exe build active file",
+			"command": "C:\\mingw64\\bin\\clang.exe",
+			"args": [
+				"-fcolor-diagnostics",
+				"-fansi-escape-codes",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\mingw64\\bin\\clang.exe"
+		},
+		{
+			"type": "shell",
+			"label": "C: zig cc build active file",
+			"command": "zig",
+			"args": [
+				"cc",  // Tell Zig to use its C compiler
+				"-g",  // Include debugging symbols
+				"${file}",  // Use the active file
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"  // Output the compiled executable
+			],
+			"options": {
+				"cwd": "${fileDirname}"  // Set the working directory to the file's directory
+			},
+			"problemMatcher": [
+				"$gcc"  // Use the GCC problem matcher
+			],
+			"group": "build",
+			"detail": "compiler: zig cc"
+		}
+	]
+}
