@@ -41,6 +41,27 @@
 			],
 			"group": "build",
 			"detail": "compiler: zig cc"
-		}
+		},
+		{
+            "label": "Build Raylib Project",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o",
+                "main",                 // Output executable
+                "main.c",               // Your source file
+                "C:/raylib/w64devkit/include", // Path to raylib include folder
+                "C:/raylib/w64devkit/lib", // Path to raylib library folder
+                "-lraylib",             // Link the raylib library
+                "-lopengl32",           // Additional libraries (Windows)
+                "-lgdi32",
+                "-lwinmm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
 	]
 }
